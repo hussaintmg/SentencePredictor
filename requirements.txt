@@ -1,6 +1,5 @@
 streamlit
 python-dotenv
-fitz
-PyMuPDF
 sentence-transformers
 pinecone
+PyMuPDF
