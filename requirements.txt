@@ -1,7 +1,6 @@
-streamlit>=1.35.0
-pinecone-client>=3.2.2
-sentence-transformers>=2.7.0
-PyMuPDF>=1.24.0
-torch>=2.2.0
-numpy>=1.26.0
+streamlit
 python-dotenv
+fitz
+PyMuPDF
+sentence-transformers
+pinecone
