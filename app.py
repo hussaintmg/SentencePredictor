@@ -1,4 +1,4 @@
-import dotenv
+from dotenv import load_dotenv
 import streamlit as st
 import os
 import time
@@ -16,8 +16,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-api_key = dotenv.get("PINECONE_API_KEY", "")
-index_name = dotenv.get("PINECONE_INDEX_NAME", "vectorsearch-demo")
+load_dotenv()
+
+api_key = os.getenv("PINECONE_API_KEY", "")
+index_name = os.getenv("PINECONE_INDEX_NAME", "vectorsearch-demo")
 
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
